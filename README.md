@@ -35,7 +35,9 @@ The check will fail if coverage is below the percentage you provide and the proc
 
 ## Sample Output
 
-TODO
+![image](https://user-images.githubusercontent.com/5508707/124333695-ff36ee00-db62-11eb-9c13-07d9dad20ac9.png)
+
+![image](https://user-images.githubusercontent.com/5508707/124333718-1249be00-db63-11eb-9a12-1c48680672da.png)
 
 ## Sample Github Workflow
 
