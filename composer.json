@@ -1,0 +1,31 @@
+{
+    "name": "permafrost-dev/coverage-check",
+    "description": "Check for a minimum code coverage percentage",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Organ",
+            "email": "patrick@permafrost.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-simplexml": "*",
+        "symfony/console": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Permafrost\\CoverageCheck\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Permafrost\\CoverageCheck\\Tests\\": "tests"
+        }
+    },
+    "bin": "bin/coverage-check",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
