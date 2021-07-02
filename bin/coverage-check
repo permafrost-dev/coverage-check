@@ -14,5 +14,5 @@ use Symfony\Component\Console\Application;
 
 $application = new Application();
 $application->add(new CheckCoverageCommand());
-$application->setDefaultCommand('coverage', true);
+$application->setDefaultCommand('check', true);
 $application->run();

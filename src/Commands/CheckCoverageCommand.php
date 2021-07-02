@@ -37,7 +37,7 @@ class CheckCoverageCommand extends Command
             return Command::INVALID;
         }
 
-        [$result, $coverage] = $this->checkCoverage($inputFile);
+        [$result, $coverage] = $this->checkCoverage($inputFile, $percentage);
 
         $this->displayResults($result, $coverage, $percentage);
 
@@ -55,11 +55,11 @@ class CheckCoverageCommand extends Command
         }
     }
 
-    protected function checkCoverage(string $filename): array
+    protected function checkCoverage(string $filename, float $requiredPercentage): array
     {
         $checker = new CoverageChecker($filename);
 
-        return [$checker->check($filename), $checker->getCoveragePercent()];
+        return [$checker->check($requiredPercentage), $checker->getCoveragePercent()];
     }
 
     protected function displayResults(bool $result, float $coverage, float $percentage): void
