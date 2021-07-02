@@ -5,7 +5,7 @@
     <br><br>
     <img src="https://img.shields.io/packagist/v/permafrost-dev/coverage-check.svg" alt="Packagist Version">
     <img src="https://img.shields.io/github/license/permafrost-dev/coverage-check.svg" alt="license">
-    <img src="https://github.com/permafrost-dev/coverage-check/actions/workflows/run-tests.yml/badge.svg" alt="Test Run Status">
+    <img src="https://github.com/permafrost-dev/coverage-check/actions/workflows/run-tests.yml/badge.svg?branch=main" alt="Test Run Status">
 </p>
 
 ---
