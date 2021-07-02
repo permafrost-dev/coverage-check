@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1625264067">
+  <project timestamp="1625264067">
+    <file name="./packages/ray/src/ArgumentConverter.php">
+      <class name="Spatie\Ray\ArgumentConverter" namespace="global">
+        <metrics complexity="5" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="13" coveredelements="13"/>
+      </class>
+      <line num="10" type="method" name="convertToPrimitive" visibility="public" complexity="5" crap="5" count="35"/>
+      <line num="12" type="stmt" count="35"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="16" type="stmt" count="34"/>
+      <line num="17" type="stmt" count="25"/>
+      <line num="20" type="stmt" count="11"/>
+      <line num="21" type="stmt" count="3"/>
+      <line num="24" type="stmt" count="8"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="7"/>
+      <line num="30" type="stmt" count="7"/>
+      <line num="32" type="stmt" count="7"/>
+      <line num="34" type="stmt" count="7"/>
+      <metrics loc="36" ncloc="36" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="12" elements="13" coveredelements="13"/>
+    </file>
+    <file name="./packages/ray/src/Client.php">
+      <class name="Spatie\Ray\Client" namespace="global">
+        <metrics complexity="19" methods="7" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="68" coveredstatements="39" elements="75" coveredelements="41"/>
+      </class>
+      <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="85"/>
+      <line num="23" type="stmt" count="85"/>
+      <line num="25" type="stmt" count="85"/>
+      <line num="27" type="stmt" count="85"/>
+      <line num="28" type="stmt" count="85"/>
+      <line num="30" type="method" name="serverIsAvailable" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="33" type="stmt" count="0"/>
+      <line num="34" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="38" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="44" type="method" name="performAvailabilityCheck" visibility="public" complexity="1" crap="1.01" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="55" type="stmt" count="1"/>
+      <line num="56" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="1"/>
+      <line num="59" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="0"/>
+      <line num="63" type="method" name="send" visibility="public" complexity="4" crap="20" count="0"/>
+      <line num="65" type="stmt" count="0"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="70" type="stmt" count="0"/>
+      <line num="72" type="stmt" count="0"/>
+      <line num="74" type="stmt" count="0"/>
+      <line num="75" type="stmt" count="0"/>
+      <line num="77" type="stmt" count="0"/>
+      <line num="78" type="stmt" count="0"/>
+      <line num="81" type="stmt" count="0"/>
+      <line num="84" type="stmt" count="0"/>
+      <line num="85" type="stmt" count="0"/>
+      <line num="87" type="stmt" count="0"/>
+      <line num="89" type="method" name="lockExists" visibility="public" complexity="8" crap="11.54" count="1"/>
+      <line num="91" type="stmt" count="1"/>
+      <line num="92" type="stmt" count="0"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="96" type="stmt" count="1"/>
+      <line num="99" type="stmt" count="1"/>
+      <line num="101" type="stmt" count="1"/>
+      <line num="102" type="stmt" count="1"/>
+      <line num="105" type="stmt" count="1"/>
+      <line num="106" type="stmt" count="1"/>
+      <line num="109" type="stmt" count="0"/>
+      <line num="110" type="stmt" count="0"/>
+      <line num="113" type="stmt" count="0"/>
+      <line num="115" type="stmt" count="0"/>
+      <line num="116" type="stmt" count="0"/>
+      <line num="119" type="stmt" count="0"/>
+      <line num="120" type="stmt" count="1"/>
+      <line num="121" type="stmt" count="1"/>
+      <line num="122" type="stmt" count="0"/>
+      <line num="124" type="stmt" count="1"/>
+      <line num="125" type="stmt" count="1"/>
+      <line num="128" type="stmt" count="1"/>
+      <line num="131" type="method" name="getCurlHandleForUrl" visibility="protected" complexity="1" crap="1" count="2"/>
+      <line num="133" type="stmt" count="2"/>
+      <line num="136" type="method" name="getCurlHandle" visibility="protected" complexity="2" crap="2.00" count="2"/>
+      <line num="138" type="stmt" count="2"/>
+      <line num="140" type="stmt" count="2"/>
+      <line num="142" type="stmt" count="2"/>
+      <line num="143" type="stmt" count="2"/>
+      <line num="147" type="stmt" count="2"/>
+      <line num="148" type="stmt" count="2"/>
+      <line num="149" type="stmt" count="2"/>
+      <line num="150" type="stmt" count="2"/>
+      <line num="151" type="stmt" count="2"/>
+      <line num="152" type="stmt" count="2"/>
+      <line num="153" type="stmt" count="2"/>
+      <line num="154" type="stmt" count="2"/>
+      <line num="156" type="stmt" count="2"/>
+      <line num="157" type="stmt" count="0"/>
+      <line num="160" type="stmt" count="2"/>
+      <metrics loc="162" ncloc="156" classes="1" methods="7" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="68" coveredstatements="39" elements="75" coveredelements="41"/>
+    </file>
+    <file name="./packages/ray/src/Concerns/RayColors.php">
+      <class name="Spatie\Ray\Concerns\RayColors" namespace="global">
+        <metrics complexity="6" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="12" coveredelements="12"/>
+      </class>
+      <line num="8" type="method" name="green" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="10" type="stmt" count="2"/>
+      <line num="13" type="method" name="orange" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="15" type="stmt" count="1"/>
+      <line num="18" type="method" name="red" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="20" type="stmt" count="2"/>
+      <line num="23" type="method" name="purple" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="28" type="method" name="blue" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="30" type="stmt" count="2"/>
+      <line num="33" type="method" name="gray" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <metrics loc="37" ncloc="36" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="12" coveredelements="12"/>
+    </file>
+    <file name="./packages/ray/src/Concerns/RaySizes.php">
+      <class name="Spatie\Ray\Concerns\RaySizes" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </class>
+      <line num="8" type="method" name="small" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <line num="13" type="method" name="large" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="15" type="stmt" count="2"/>
+      <metrics loc="17" ncloc="16" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+    </file>
+    <file name="./packages/ray/src/Concerns/RemovesRayFrames.php">
+      <class name="Spatie\Ray\Concerns\RemovesRayFrames" namespace="global">
+        <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </class>
+      <line num="9" type="method" name="removeRayFrames" visibility="protected" complexity="1" crap="1" count="6"/>
+      <line num="11" type="stmt" count="6"/>
+      <line num="12" type="stmt" count="6"/>
+      <line num="13" type="stmt" count="6"/>
+      <line num="15" type="stmt" count="6"/>
+      <line num="18" type="method" name="isRayFrame" visibility="protected" complexity="3" crap="3" count="6"/>
+      <line num="20" type="stmt" count="6"/>
+      <line num="21" type="stmt" count="6"/>
+      <line num="22" type="stmt" count="3"/>
+      <line num="26" type="stmt" count="6"/>
+      <line num="29" type="method" name="rayNamespaces" visibility="protected" complexity="1" crap="1" count="6"/>
+      <line num="32" type="stmt" count="6"/>
+      <metrics loc="37" ncloc="37" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+    </file>
+    <file name="./packages/ray/src/Exceptions/CouldNotConnectToRay.php">
+      <class name="Spatie\Ray\Exceptions\CouldNotConnectToRay" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="9" type="method" name="make" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="11" type="stmt" count="1"/>
+      <metrics loc="13" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/Exceptions/StopExecutionRequested.php">
+      <class name="Spatie\Ray\Exceptions\StopExecutionRequested" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+      </class>
+      <line num="9" type="method" name="make" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <metrics loc="13" ncloc="13" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
+    </file>
+    <file name="./packages/ray/src/Origin/DefaultOriginFactory.php">
+      <class name="Spatie\Ray\Origin\DefaultOriginFactory" namespace="global">
+        <metrics complexity="12" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="22" elements="29" coveredelements="27"/>
+      </class>
+      <line num="11" type="method" name="getOrigin" visibility="public" complexity="3" crap="3" count="75"/>
+      <line num="13" type="stmt" count="75"/>
+      <line num="15" type="stmt" count="75"/>
+      <line num="16" type="stmt" count="75"/>
+      <line num="17" type="stmt" count="75"/>
+      <line num="18" type="stmt" count="75"/>
+      <line num="25" type="method" name="getFrame" visibility="protected" complexity="1" crap="1" count="75"/>
+      <line num="27" type="stmt" count="75"/>
+      <line num="29" type="stmt" count="75"/>
+      <line num="31" type="stmt" count="75"/>
+      <line num="34" type="method" name="getAllFrames" visibility="protected" complexity="1" crap="1" count="75"/>
+      <line num="36" type="stmt" count="75"/>
+      <line num="38" type="stmt" count="75"/>
+      <line num="46" type="method" name="getIndexOfRayFrame" visibility="protected" complexity="3" crap="3" count="75"/>
+      <line num="48" type="stmt" count="75"/>
+      <line num="49" type="stmt" count="75"/>
+      <line num="50" type="stmt" count="72"/>
+      <line num="53" type="stmt" count="75"/>
+      <line num="54" type="stmt" count="3"/>
+      <line num="57" type="stmt" count="75"/>
+      <line num="58" type="stmt" count="75"/>
+      <line num="60" type="stmt" count="75"/>
+      <line num="63" type="method" name="startsWith" visibility="public" complexity="1" crap="1" count="75"/>
+      <line num="65" type="stmt" count="75"/>
+      <line num="74" type="method" name="search" visibility="protected" complexity="3" crap="3.14" count="75"/>
+      <line num="76" type="stmt" count="75"/>
+      <line num="77" type="stmt" count="75"/>
+      <line num="78" type="stmt" count="75"/>
+      <line num="82" type="stmt" count="0"/>
+      <metrics loc="84" ncloc="70" classes="1" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="22" elements="29" coveredelements="27"/>
+    </file>
+    <file name="./packages/ray/src/Origin/Hostname.php">
+      <class name="Spatie\Ray\Origin\Hostname" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+      </class>
+      <line num="9" type="method" name="get" visibility="public" complexity="1" crap="1" count="79"/>
+      <line num="11" type="stmt" count="79"/>
+      <line num="14" type="method" name="set" visibility="public" complexity="1" crap="1" count="85"/>
+      <line num="16" type="stmt" count="85"/>
+      <line num="17" type="stmt" count="85"/>
+      <metrics loc="18" ncloc="18" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
+    </file>
+    <file name="./packages/ray/src/Origin/Origin.php">
+      <class name="Spatie\Ray\Origin\Origin" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+      </class>
+      <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="79"/>
+      <line num="23" type="stmt" count="79"/>
+      <line num="25" type="stmt" count="79"/>
+      <line num="27" type="stmt" count="79"/>
+      <line num="28" type="stmt" count="79"/>
+      <line num="30" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="79"/>
+      <line num="33" type="stmt" count="79"/>
+      <line num="34" type="stmt" count="79"/>
+      <line num="35" type="stmt" count="79"/>
+      <line num="39" type="method" name="fingerPrint" visibility="public" complexity="1" crap="1" count="16"/>
+      <line num="41" type="stmt" count="16"/>
+      <metrics loc="43" ncloc="35" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
+    </file>
+    <file name="./packages/ray/src/Origin/OriginFactory.php">
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="./packages/ray/src/PayloadFactory.php">
+      <class name="Spatie\Ray\PayloadFactory" namespace="global">
+        <metrics complexity="10" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="15" elements="24" coveredelements="18"/>
+      </class>
+      <line num="20" type="method" name="createForValues" visibility="public" complexity="1" crap="1" count="28"/>
+      <line num="22" type="stmt" count="28"/>
+      <line num="25" type="method" name="registerPayloadFinder" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="30" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="29"/>
+      <line num="32" type="stmt" count="29"/>
+      <line num="33" type="stmt" count="29"/>
+      <line num="35" type="method" name="getPayloads" visibility="public" complexity="1" crap="1" count="29"/>
+      <line num="37" type="stmt" count="29"/>
+      <line num="38" type="stmt" count="29"/>
+      <line num="39" type="stmt" count="29"/>
+      <line num="42" type="method" name="getPayload" visibility="protected" complexity="6" crap="6.22" count="29"/>
+      <line num="44" type="stmt" count="29"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="29"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="28"/>
+      <line num="55" type="stmt" count="1"/>
+      <line num="58" type="stmt" count="27"/>
+      <line num="59" type="stmt" count="2"/>
+      <line num="62" type="stmt" count="26"/>
+      <line num="64" type="stmt" count="26"/>
+      <metrics loc="66" ncloc="64" classes="1" methods="5" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="15" elements="24" coveredelements="18"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/ApplicationLogPayload.php">
+      <class name="Spatie\Ray\Payloads\ApplicationLogPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/BoolPayload.php">
+      <class name="Spatie\Ray\Payloads\BoolPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <metrics loc="27" ncloc="26" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/CallerPayload.php">
+      <class name="Spatie\Ray\Payloads\CallerPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="17" type="stmt" count="3"/>
+      <line num="18" type="stmt" count="3"/>
+      <line num="20" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="25" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="27" type="stmt" count="3"/>
+      <line num="30" type="stmt" count="3"/>
+      <line num="34" type="stmt" count="3"/>
+      <line num="35" type="stmt" count="3"/>
+      <line num="36" type="stmt" count="3"/>
+      <line num="37" type="stmt" count="3"/>
+      <line num="38" type="stmt" count="3"/>
+      <metrics loc="42" ncloc="40" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="13" coveredelements="13"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/CarbonPayload.php">
+      <class name="Spatie\Ray\Payloads\CarbonPayload" namespace="global">
+        <metrics complexity="6" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="17" type="stmt" count="3"/>
+      <line num="19" type="stmt" count="3"/>
+      <line num="20" type="stmt" count="3"/>
+      <line num="22" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="27" type="method" name="getContent" visibility="public" complexity="4" crap="4" count="2"/>
+      <line num="30" type="stmt" count="2"/>
+      <line num="31" type="stmt" count="2"/>
+      <line num="32" type="stmt" count="2"/>
+      <metrics loc="35" ncloc="33" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="10" coveredelements="10"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/ClearAllPayload.php">
+      <class name="Spatie\Ray\Payloads\ClearAllPayload" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="7" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="9" type="stmt" count="1"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/ColorPayload.php">
+      <class name="Spatie\Ray\Payloads\ColorPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="12" type="stmt" count="4"/>
+      <line num="13" type="stmt" count="4"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="17" type="stmt" count="4"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="23" type="stmt" count="4"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/CreateLockPayload.php">
+      <class name="Spatie\Ray\Payloads\CreateLockPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/CustomPayload.php">
+      <class name="Spatie\Ray\Payloads\CustomPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </class>
+      <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="16" type="stmt" count="8"/>
+      <line num="18" type="stmt" count="8"/>
+      <line num="19" type="stmt" count="8"/>
+      <line num="21" type="method" name="getType" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="23" type="stmt" count="8"/>
+      <line num="26" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="29" type="stmt" count="8"/>
+      <line num="30" type="stmt" count="8"/>
+      <metrics loc="33" ncloc="31" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/DecodedJsonPayload.php">
+      <class name="Spatie\Ray\Payloads\DecodedJsonPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <line num="15" type="stmt" count="2"/>
+      <line num="17" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="19" type="stmt" count="2"/>
+      <line num="22" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="28" type="stmt" count="2"/>
+      <metrics loc="31" ncloc="30" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="9" coveredelements="9"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/ExceptionPayload.php">
+      <class name="Spatie\Ray\Payloads\ExceptionPayload" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="22" coveredelements="22"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="29" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="41" type="method" name="getFrames" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="45" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <metrics loc="56" ncloc="54" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="18" elements="22" coveredelements="22"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/FileContentsPayload.php">
+      <class name="Spatie\Ray\Payloads\FileContentsPayload" namespace="global">
+        <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="37" type="method" name="encodeContent" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="42" type="stmt" count="1"/>
+      <metrics loc="44" ncloc="42" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/HideAppPayload.php">
+      <class name="Spatie\Ray\Payloads\HideAppPayload" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="7" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="9" type="stmt" count="1"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/HidePayload.php">
+      <class name="Spatie\Ray\Payloads\HidePayload" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="7" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="9" type="stmt" count="2"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/HtmlPayload.php">
+      <class name="Spatie\Ray\Payloads\HtmlPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <metrics loc="27" ncloc="26" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="8" coveredelements="8"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/ImagePayload.php">
+      <class name="Spatie\Ray\Payloads\ImagePayload" namespace="global">
+        <metrics complexity="4" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="7" elements="11" coveredelements="9"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="2" crap="2.03" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <metrics loc="33" ncloc="32" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="7" elements="11" coveredelements="9"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/JsonStringPayload.php">
+      <class name="Spatie\Ray\Payloads\JsonStringPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="12" type="stmt" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/LogPayload.php">
+      <class name="Spatie\Ray\Payloads\LogPayload" namespace="global">
+        <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="14" coveredelements="14"/>
+      </class>
+      <line num="12" type="method" name="createForArguments" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="14" type="stmt" count="2"/>
+      <line num="15" type="stmt" count="2"/>
+      <line num="16" type="stmt" count="2"/>
+      <line num="18" type="stmt" count="2"/>
+      <line num="21" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="29"/>
+      <line num="23" type="stmt" count="29"/>
+      <line num="24" type="stmt" count="27"/>
+      <line num="27" type="stmt" count="29"/>
+      <line num="28" type="stmt" count="29"/>
+      <line num="30" type="method" name="getType" visibility="public" complexity="1" crap="1" count="29"/>
+      <line num="32" type="stmt" count="29"/>
+      <line num="35" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="29"/>
+      <line num="38" type="stmt" count="29"/>
+      <metrics loc="41" ncloc="40" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="14" coveredelements="14"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/MeasurePayload.php">
+      <class name="Spatie\Ray\Payloads\MeasurePayload" namespace="global">
+        <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
+      </class>
+      <line num="27" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="29" type="stmt" count="4"/>
+      <line num="31" type="stmt" count="4"/>
+      <line num="32" type="stmt" count="4"/>
+      <line num="34" type="stmt" count="4"/>
+      <line num="36" type="stmt" count="4"/>
+      <line num="37" type="stmt" count="2"/>
+      <line num="38" type="stmt" count="2"/>
+      <line num="40" type="stmt" count="4"/>
+      <line num="42" type="method" name="concernsNewTimer" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="44" type="stmt" count="3"/>
+      <line num="45" type="stmt" count="3"/>
+      <line num="46" type="stmt" count="3"/>
+      <line num="47" type="stmt" count="3"/>
+      <line num="48" type="stmt" count="3"/>
+      <line num="50" type="stmt" count="3"/>
+      <line num="53" type="method" name="getType" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="55" type="stmt" count="4"/>
+      <line num="58" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="61" type="stmt" count="4"/>
+      <line num="62" type="stmt" count="4"/>
+      <line num="64" type="stmt" count="4"/>
+      <line num="65" type="stmt" count="4"/>
+      <line num="67" type="stmt" count="4"/>
+      <line num="68" type="stmt" count="4"/>
+      <metrics loc="71" ncloc="65" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="25" coveredelements="25"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/NewScreenPayload.php">
+      <class name="Spatie\Ray\Payloads\NewScreenPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="12" type="stmt" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/NotifyPayload.php">
+      <class name="Spatie\Ray\Payloads\NotifyPayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/NullPayload.php">
+      <class name="Spatie\Ray\Payloads\NullPayload" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </class>
+      <line num="10" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="15" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="18" type="stmt" count="1"/>
+      <metrics loc="22" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/Payload.php">
+      <class name="Spatie\Ray\Payloads\Payload" namespace="global">
+        <metrics complexity="7" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="12" elements="18" coveredelements="16"/>
+      </class>
+      <line num="21" type="method" name="replaceRemotePathWithLocalPath" visibility="public" complexity="3" crap="3" count="77"/>
+      <line num="23" type="stmt" count="77"/>
+      <line num="24" type="stmt" count="75"/>
+      <line num="27" type="stmt" count="2"/>
+      <line num="29" type="stmt" count="2"/>
+      <line num="32" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="10"/>
+      <line num="34" type="stmt" count="10"/>
+      <line num="37" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="75"/>
+      <line num="40" type="stmt" count="75"/>
+      <line num="41" type="stmt" count="75"/>
+      <line num="42" type="stmt" count="75"/>
+      <line num="46" type="method" name="toJson" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="51" type="method" name="getOrigin" visibility="protected" complexity="1" crap="1" count="75"/>
+      <line num="54" type="stmt" count="75"/>
+      <line num="56" type="stmt" count="75"/>
+      <line num="58" type="stmt" count="75"/>
+      <line num="60" type="stmt" count="75"/>
+      <metrics loc="62" ncloc="58" classes="1" methods="5" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="12" elements="18" coveredelements="16"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/PhpInfoPayload.php">
+      <class name="Spatie\Ray\Payloads\PhpInfoPayload" namespace="global">
+        <metrics complexity="5" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="19" coveredelements="19"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="12" type="stmt" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="3" crap="3" count="2"/>
+      <line num="22" type="stmt" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="28" type="stmt" count="2"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="33" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <line num="36" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="2"/>
+      <line num="42" type="stmt" count="2"/>
+      <metrics loc="45" ncloc="44" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="19" coveredelements="19"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/RemovePayload.php">
+      <class name="Spatie\Ray\Payloads\RemovePayload" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="7" type="method" name="getType" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="9" type="stmt" count="5"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/ShowAppPayload.php">
+      <class name="Spatie\Ray\Payloads\ShowAppPayload" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="7" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="9" type="stmt" count="1"/>
+      <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/SizePayload.php">
+      <class name="Spatie\Ray\Payloads\SizePayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="12" type="stmt" count="2"/>
+      <line num="13" type="stmt" count="2"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="17" type="stmt" count="2"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="23" type="stmt" count="2"/>
+      <metrics loc="26" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/TablePayload.php">
+      <class name="Spatie\Ray\Payloads\TablePayload" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="19" type="stmt" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="22" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="24" type="stmt" count="1"/>
+      <line num="27" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="30" type="stmt" count="1"/>
+      <line num="31" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="35" type="stmt" count="1"/>
+      <metrics loc="38" ncloc="36" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="12" coveredelements="12"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/TextPayload.php">
+      <class name="Spatie\Ray\Payloads\TextPayload" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="12" type="stmt" count="8"/>
+      <line num="13" type="stmt" count="8"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="17" type="stmt" count="8"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="23" type="stmt" count="8"/>
+      <line num="24" type="stmt" count="8"/>
+      <line num="28" type="method" name="formatContent" visibility="protected" complexity="1" crap="1" count="8"/>
+      <line num="30" type="stmt" count="8"/>
+      <line num="32" type="stmt" count="8"/>
+      <metrics loc="34" ncloc="33" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/TracePayload.php">
+      <class name="Spatie\Ray\Payloads\TracePayload" namespace="global">
+        <metrics complexity="6" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="12" elements="22" coveredelements="14"/>
+      </class>
+      <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="23" type="stmt" count="3"/>
+      <line num="24" type="stmt" count="3"/>
+      <line num="26" type="method" name="startFromIndex" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="33" type="method" name="limit" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="40" type="method" name="getType" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="42" type="stmt" count="3"/>
+      <line num="45" type="method" name="getContent" visibility="public" complexity="2" crap="2.00" count="3"/>
+      <line num="47" type="stmt" count="3"/>
+      <line num="49" type="stmt" count="3"/>
+      <line num="50" type="stmt" count="3"/>
+      <line num="51" type="stmt" count="3"/>
+      <line num="52" type="stmt" count="3"/>
+      <line num="53" type="stmt" count="3"/>
+      <line num="55" type="stmt" count="3"/>
+      <line num="57" type="stmt" count="3"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="61" type="stmt" count="3"/>
+      <metrics loc="63" ncloc="60" classes="1" methods="5" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="12" elements="22" coveredelements="14"/>
+    </file>
+    <file name="./packages/ray/src/Payloads/XmlPayload.php">
+      <class name="Spatie\Ray\Payloads\XmlPayload" namespace="global">
+        <metrics complexity="8" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="17" elements="25" coveredelements="22"/>
+      </class>
+      <line num="10" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="13" type="stmt" count="1"/>
+      <line num="15" type="method" name="getType" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="20" type="method" name="getContent" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="30" type="method" name="formatXmlForDisplay" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="32" type="stmt" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <line num="37" type="method" name="encodeXml" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="41" type="stmt" count="1"/>
+      <line num="44" type="method" name="formatAndIndentXml" visibility="protected" complexity="3" crap="3.10" count="1"/>
+      <line num="46" type="stmt" count="1"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="56" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="0"/>
+      <line num="60" type="stmt" count="1"/>
+      <metrics loc="62" ncloc="61" classes="1" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="17" elements="25" coveredelements="22"/>
+    </file>
+    <file name="./packages/ray/src/Ray.php">
+      <class name="Spatie\Ray\Ray" namespace="global">
+        <metrics complexity="90" methods="57" coveredmethods="52" conditionals="0" coveredconditionals="0" statements="207" coveredstatements="201" elements="264" coveredelements="253"/>
+      </class>
+      <line num="89" type="method" name="create" visibility="public" complexity="1" crap="1" count="9"/>
+      <line num="91" type="stmt" count="9"/>
+      <line num="93" type="stmt" count="9"/>
+      <line num="96" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="85"/>
+      <line num="98" type="stmt" count="85"/>
+      <line num="100" type="stmt" count="85"/>
+      <line num="102" type="stmt" count="85"/>
+      <line num="104" type="stmt" count="85"/>
+      <line num="106" type="stmt" count="85"/>
+      <line num="108" type="stmt" count="85"/>
+      <line num="110" type="stmt" count="85"/>
+      <line num="111" type="stmt" count="85"/>
+      <line num="113" type="method" name="enable" visibility="public" complexity="1" crap="1" count="85"/>
+      <line num="115" type="stmt" count="85"/>
+      <line num="117" type="stmt" count="85"/>
+      <line num="120" type="method" name="disable" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="122" type="stmt" count="4"/>
+      <line num="124" type="stmt" count="4"/>
+      <line num="127" type="method" name="enabled" visibility="public" complexity="2" crap="2" count="78"/>
+      <line num="129" type="stmt" count="78"/>
+      <line num="132" type="method" name="disabled" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="134" type="stmt" count="1"/>
+      <line num="137" type="method" name="useClient" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="139" type="stmt" count="0"/>
+      <line num="140" type="stmt" count="0"/>
+      <line num="142" type="method" name="newScreen" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="144" type="stmt" count="2"/>
+      <line num="146" type="stmt" count="2"/>
+      <line num="149" type="method" name="clearAll" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="151" type="stmt" count="1"/>
+      <line num="153" type="stmt" count="1"/>
+      <line num="156" type="method" name="clearScreen" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="158" type="stmt" count="1"/>
+      <line num="161" type="method" name="color" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="163" type="stmt" count="4"/>
+      <line num="165" type="stmt" count="4"/>
+      <line num="168" type="method" name="size" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="170" type="stmt" count="2"/>
+      <line num="172" type="stmt" count="2"/>
+      <line num="175" type="method" name="remove" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="177" type="stmt" count="5"/>
+      <line num="179" type="stmt" count="5"/>
+      <line num="182" type="method" name="hide" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="184" type="stmt" count="2"/>
+      <line num="186" type="stmt" count="2"/>
+      <line num="194" type="method" name="measure" visibility="public" complexity="3" crap="3" count="4"/>
+      <line num="196" type="stmt" count="4"/>
+      <line num="197" type="stmt" count="1"/>
+      <line num="200" type="stmt" count="3"/>
+      <line num="201" type="stmt" count="3"/>
+      <line num="202" type="stmt" count="3"/>
+      <line num="204" type="stmt" count="3"/>
+      <line num="205" type="stmt" count="3"/>
+      <line num="206" type="stmt" count="3"/>
+      <line num="208" type="stmt" count="3"/>
+      <line num="211" type="stmt" count="1"/>
+      <line num="212" type="stmt" count="1"/>
+      <line num="213" type="stmt" count="1"/>
+      <line num="215" type="stmt" count="1"/>
+      <line num="218" type="method" name="trace" visibility="public" complexity="4" crap="4.05" count="3"/>
+      <line num="220" type="stmt" count="3"/>
+      <line num="222" type="stmt" count="3"/>
+      <line num="223" type="stmt" count="0"/>
+      <line num="226" type="stmt" count="3"/>
+      <line num="227" type="stmt" count="1"/>
+      <line num="230" type="stmt" count="3"/>
+      <line num="232" type="stmt" count="3"/>
+      <line num="235" type="method" name="backtrace" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="237" type="stmt" count="1"/>
+      <line num="240" type="method" name="caller" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="242" type="stmt" count="1"/>
+      <line num="244" type="stmt" count="1"/>
+      <line num="246" type="stmt" count="1"/>
+      <line num="249" type="method" name="measureClosure" visibility="protected" complexity="1" crap="1" count="1"/>
+      <line num="251" type="stmt" count="1"/>
+      <line num="253" type="stmt" count="1"/>
+      <line num="255" type="stmt" count="1"/>
+      <line num="257" type="stmt" count="1"/>
+      <line num="259" type="stmt" count="1"/>
+      <line num="261" type="stmt" count="1"/>
+      <line num="264" type="method" name="stopTime" visibility="public" complexity="3" crap="3.03" count="2"/>
+      <line num="266" type="stmt" count="2"/>
+      <line num="267" type="stmt" count="1"/>
+      <line num="269" type="stmt" count="1"/>
+      <line num="272" type="stmt" count="1"/>
+      <line num="273" type="stmt" count="1"/>
+      <line num="275" type="stmt" count="1"/>
+      <line num="278" type="stmt" count="0"/>
+      <line num="281" type="method" name="notify" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="283" type="stmt" count="1"/>
+      <line num="285" type="stmt" count="1"/>
+      <line num="291" type="method" name="toJson" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="293" type="stmt" count="2"/>
+      <line num="294" type="stmt" count="2"/>
+      <line num="295" type="stmt" count="2"/>
+      <line num="297" type="stmt" count="2"/>
+      <line num="303" type="method" name="json" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="305" type="stmt" count="2"/>
+      <line num="306" type="stmt" count="2"/>
+      <line num="307" type="stmt" count="2"/>
+      <line num="309" type="stmt" count="2"/>
+      <line num="312" type="method" name="file" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="314" type="stmt" count="1"/>
+      <line num="316" type="stmt" count="1"/>
+      <line num="319" type="method" name="image" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="321" type="stmt" count="1"/>
+      <line num="323" type="stmt" count="1"/>
+      <line num="326" type="method" name="die" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="328" type="stmt" count="0"/>
+      <line num="331" type="method" name="className" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="333" type="stmt" count="1"/>
+      <line num="336" type="method" name="phpinfo" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="338" type="stmt" count="2"/>
+      <line num="340" type="stmt" count="2"/>
+      <line num="343" type="method" name="if" visibility="public" complexity="5" crap="5" count="5"/>
+      <line num="345" type="stmt" count="5"/>
+      <line num="346" type="stmt" count="1"/>
+      <line num="349" type="stmt" count="5"/>
+      <line num="350" type="stmt" count="2"/>
+      <line num="353" type="stmt" count="5"/>
+      <line num="354" type="stmt" count="2"/>
+      <line num="357" type="stmt" count="5"/>
+      <line num="363" type="method" name="showWhen" visibility="public" complexity="3" crap="3" count="2"/>
+      <line num="365" type="stmt" count="2"/>
+      <line num="366" type="stmt" count="1"/>
+      <line num="369" type="stmt" count="2"/>
+      <line num="370" type="stmt" count="2"/>
+      <line num="373" type="stmt" count="2"/>
+      <line num="379" type="method" name="showIf" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="381" type="stmt" count="2"/>
+      <line num="387" type="method" name="removeWhen" visibility="public" complexity="3" crap="3" count="2"/>
+      <line num="389" type="stmt" count="2"/>
+      <line num="390" type="stmt" count="1"/>
+      <line num="393" type="stmt" count="2"/>
+      <line num="394" type="stmt" count="2"/>
+      <line num="397" type="stmt" count="2"/>
+      <line num="403" type="method" name="removeIf" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="405" type="stmt" count="2"/>
+      <line num="408" type="method" name="carbon" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="410" type="stmt" count="1"/>
+      <line num="412" type="stmt" count="1"/>
+      <line num="414" type="stmt" count="1"/>
+      <line num="417" type="method" name="ban" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="419" type="stmt" count="1"/>
+      <line num="422" type="method" name="charles" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="424" type="stmt" count="1"/>
+      <line num="427" type="method" name="table" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="429" type="stmt" count="1"/>
+      <line num="431" type="stmt" count="1"/>
+      <line num="434" type="method" name="count" visibility="public" complexity="3" crap="3" count="6"/>
+      <line num="436" type="stmt" count="6"/>
+      <line num="438" type="stmt" count="6"/>
+      <line num="440" type="stmt" count="6"/>
+      <line num="442" type="stmt" count="6"/>
+      <line num="443" type="stmt" count="5"/>
+      <line num="446" type="stmt" count="6"/>
+      <line num="448" type="stmt" count="6"/>
+      <line num="449" type="stmt" count="5"/>
+      <line num="450" type="stmt" count="6"/>
+      <line num="452" type="stmt" count="6"/>
+      <line num="454" type="stmt" count="6"/>
+      <line num="456" type="stmt" count="6"/>
+      <line num="459" type="method" name="clearCounters" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="461" type="stmt" count="1"/>
+      <line num="463" type="stmt" count="1"/>
+      <line num="466" type="method" name="counterValue" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="468" type="stmt" count="1"/>
+      <line num="471" type="method" name="pause" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="473" type="stmt" count="1"/>
+      <line num="475" type="stmt" count="1"/>
+      <line num="477" type="stmt" count="1"/>
+      <line num="480" type="stmt" count="1"/>
+      <line num="481" type="stmt" count="1"/>
+      <line num="483" type="stmt" count="1"/>
+      <line num="486" type="method" name="html" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="488" type="stmt" count="1"/>
+      <line num="490" type="stmt" count="1"/>
+      <line num="493" type="method" name="exception" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="495" type="stmt" count="1"/>
+      <line num="497" type="stmt" count="1"/>
+      <line num="499" type="stmt" count="1"/>
+      <line num="501" type="stmt" count="1"/>
+      <line num="504" type="method" name="xml" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="506" type="stmt" count="1"/>
+      <line num="508" type="stmt" count="1"/>
+      <line num="511" type="method" name="text" visibility="public" complexity="1" crap="1" count="8"/>
+      <line num="513" type="stmt" count="8"/>
+      <line num="515" type="stmt" count="8"/>
+      <line num="518" type="method" name="raw" visibility="public" complexity="2" crap="2" count="3"/>
+      <line num="520" type="stmt" count="3"/>
+      <line num="521" type="stmt" count="1"/>
+      <line num="524" type="stmt" count="2"/>
+      <line num="525" type="stmt" count="2"/>
+      <line num="526" type="stmt" count="2"/>
+      <line num="528" type="stmt" count="2"/>
+      <line num="531" type="method" name="limit" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="533" type="stmt" count="4"/>
+      <line num="535" type="stmt" count="4"/>
+      <line num="537" type="stmt" count="4"/>
+      <line num="540" type="method" name="once" visibility="public" complexity="2" crap="2" count="3"/>
+      <line num="542" type="stmt" count="3"/>
+      <line num="544" type="stmt" count="3"/>
+      <line num="546" type="stmt" count="3"/>
+      <line num="547" type="stmt" count="2"/>
+      <line num="550" type="stmt" count="1"/>
+      <line num="553" type="method" name="send" visibility="public" complexity="3" crap="3" count="36"/>
+      <line num="555" type="stmt" count="36"/>
+      <line num="556" type="stmt" count="8"/>
+      <line num="559" type="stmt" count="28"/>
+      <line num="560" type="stmt" count="1"/>
+      <line num="563" type="stmt" count="27"/>
+      <line num="565" type="stmt" count="27"/>
+      <line num="568" type="method" name="pass" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="570" type="stmt" count="1"/>
+      <line num="572" type="stmt" count="1"/>
+      <line num="575" type="method" name="showApp" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="577" type="stmt" count="1"/>
+      <line num="579" type="stmt" count="1"/>
+      <line num="582" type="method" name="hideApp" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="584" type="stmt" count="1"/>
+      <line num="586" type="stmt" count="1"/>
+      <line num="589" type="method" name="sendCustom" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="591" type="stmt" count="7"/>
+      <line num="593" type="stmt" count="7"/>
+      <line num="603" type="method" name="sendRequest" visibility="public" complexity="11" crap="11" count="75"/>
+      <line num="605" type="stmt" count="75"/>
+      <line num="606" type="stmt" count="3"/>
+      <line num="609" type="stmt" count="75"/>
+      <line num="610" type="stmt" count="2"/>
+      <line num="613" type="stmt" count="75"/>
+      <line num="614" type="stmt" count="6"/>
+      <line num="615" type="stmt" count="6"/>
+      <line num="618" type="stmt" count="6"/>
+      <line num="621" type="stmt" count="75"/>
+      <line num="622" type="stmt" count="46"/>
+      <line num="626" type="stmt" count="75"/>
+      <line num="627" type="stmt" count="75"/>
+      <line num="629" type="stmt" count="0"/>
+      <line num="633" type="stmt" count="75"/>
+      <line num="634" type="stmt" count="75"/>
+      <line num="635" type="stmt" count="1"/>
+      <line num="637" type="stmt" count="1"/>
+      <line num="640" type="stmt" count="75"/>
+      <line num="641" type="stmt" count="75"/>
+      <line num="642" type="stmt" count="75"/>
+      <line num="645" type="stmt" count="75"/>
+      <line num="646" type="stmt" count="75"/>
+      <line num="647" type="stmt" count="75"/>
+      <line num="650" type="stmt" count="75"/>
+      <line num="652" type="stmt" count="75"/>
+      <line num="654" type="stmt" count="75"/>
+      <line num="656" type="stmt" count="75"/>
+      <line num="659" type="method" name="makePathOsSafe" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="661" type="stmt" count="2"/>
+      <line num="664" type="method" name="rateLimiter" visibility="public" complexity="1" crap="1" count="85"/>
+      <line num="666" type="stmt" count="85"/>
+      <line num="669" type="method" name="notifyWhenRateLimitReached" visibility="protected" complexity="2" crap="2" count="1"/>
+      <line num="671" type="stmt" count="1"/>
+      <line num="672" type="stmt" count="1"/>
+      <line num="675" type="stmt" count="1"/>
+      <line num="677" type="stmt" count="1"/>
+      <line num="679" type="stmt" count="1"/>
+      <line num="681" type="stmt" count="1"/>
+      <line num="682" type="stmt" count="1"/>
+      <metrics loc="683" ncloc="642" classes="1" methods="57" coveredmethods="52" conditionals="0" coveredconditionals="0" statements="207" coveredstatements="201" elements="264" coveredelements="253"/>
+    </file>
+    <file name="./packages/ray/src/Request.php">
+      <class name="Spatie\Ray\Request" namespace="global">
+        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="10" elements="14" coveredelements="12"/>
+      </class>
+      <line num="18" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="75"/>
+      <line num="20" type="stmt" count="75"/>
+      <line num="22" type="stmt" count="75"/>
+      <line num="24" type="stmt" count="75"/>
+      <line num="25" type="stmt" count="75"/>
+      <line num="27" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="75"/>
+      <line num="29" type="stmt" count="75"/>
+      <line num="30" type="stmt" count="75"/>
+      <line num="31" type="stmt" count="75"/>
+      <line num="34" type="stmt" count="75"/>
+      <line num="35" type="stmt" count="75"/>
+      <line num="36" type="stmt" count="75"/>
+      <line num="40" type="method" name="toJson" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <metrics loc="44" ncloc="41" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="10" elements="14" coveredelements="12"/>
+    </file>
+    <file name="./packages/ray/src/Settings/Settings.php">
+      <class name="Spatie\Ray\Settings\Settings" namespace="global">
+        <metrics complexity="10" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="13" elements="22" coveredelements="18"/>
+      </class>
+      <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="88"/>
+      <line num="25" type="stmt" count="88"/>
+      <line num="26" type="stmt" count="88"/>
+      <line num="28" type="method" name="markAsLoadedUsingSettingsFile" visibility="public" complexity="1" crap="1" count="88"/>
+      <line num="30" type="stmt" count="88"/>
+      <line num="32" type="stmt" count="88"/>
+      <line num="35" type="method" name="setDefaultSettings" visibility="public" complexity="3" crap="3" count="1"/>
+      <line num="37" type="stmt" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="46" type="method" name="wasLoadedUsingConfigFile" visibility="protected" complexity="3" crap="4.94" count="1"/>
+      <line num="48" type="stmt" count="1"/>
+      <line num="49" type="stmt" count="1"/>
+      <line num="52" type="stmt" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="56" type="stmt" count="0"/>
+      <line num="59" type="method" name="__set" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="61" type="stmt" count="1"/>
+      <line num="62" type="stmt" count="1"/>
+      <line num="64" type="method" name="__get" visibility="public" complexity="1" crap="1" count="79"/>
+      <line num="66" type="stmt" count="79"/>
+      <metrics loc="68" ncloc="65" classes="1" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="13" elements="22" coveredelements="18"/>
+    </file>
+    <file name="./packages/ray/src/Settings/SettingsFactory.php">
+      <class name="Spatie\Ray\Settings\SettingsFactory" namespace="global">
+        <metrics complexity="11" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="22" elements="29" coveredelements="24"/>
+      </class>
+      <line num="9" type="method" name="createFromConfigFile" visibility="public" complexity="2" crap="2" count="88"/>
+      <line num="11" type="stmt" count="88"/>
+      <line num="13" type="stmt" count="88"/>
+      <line num="15" type="stmt" count="88"/>
+      <line num="16" type="stmt" count="88"/>
+      <line num="19" type="stmt" count="88"/>
+      <line num="22" type="method" name="getSettingsFromConfigFile" visibility="public" complexity="2" crap="2.03" count="88"/>
+      <line num="24" type="stmt" count="88"/>
+      <line num="26" type="stmt" count="88"/>
+      <line num="27" type="stmt" count="0"/>
+      <line num="30" type="stmt" count="88"/>
+      <line num="32" type="stmt" count="88"/>
+      <line num="35" type="method" name="searchConfigFiles" visibility="protected" complexity="2" crap="2" count="88"/>
+      <line num="37" type="stmt" count="88"/>
+      <line num="38" type="stmt" count="2"/>
+      <line num="41" type="stmt" count="88"/>
+      <line num="44" type="method" name="searchConfigFilesOnDisk" visibility="protected" complexity="5" crap="5.12" count="2"/>
+      <line num="47" type="stmt" count="2"/>
+      <line num="50" type="stmt" count="2"/>
+      <line num="52" type="stmt" count="2"/>
+      <line num="53" type="stmt" count="2"/>
+      <line num="54" type="stmt" count="2"/>
+      <line num="55" type="stmt" count="2"/>
+      <line num="56" type="stmt" count="2"/>
+      <line num="60" type="stmt" count="2"/>
+      <line num="65" type="stmt" count="2"/>
+      <line num="66" type="stmt" count="0"/>
+      <line num="69" type="stmt" count="2"/>
+      <line num="72" type="stmt" count="0"/>
+      <metrics loc="74" ncloc="71" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="22" elements="29" coveredelements="24"/>
+    </file>
+    <file name="./packages/ray/src/Support/CacheStore.php">
+      <class name="Spatie\Ray\Support\CacheStore" namespace="global">
+        <metrics complexity="9" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
+      </class>
+      <line num="13" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
+      <line num="15" type="stmt" count="6"/>
+      <line num="16" type="stmt" count="6"/>
+      <line num="18" type="method" name="hit" visibility="public" complexity="1" crap="1" count="79"/>
+      <line num="20" type="stmt" count="79"/>
+      <line num="22" type="stmt" count="79"/>
+      <line num="25" type="method" name="clear" visibility="public" complexity="1" crap="1" count="88"/>
+      <line num="27" type="stmt" count="88"/>
+      <line num="29" type="stmt" count="88"/>
+      <line num="32" type="method" name="count" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="34" type="stmt" count="3"/>
+      <line num="37" type="method" name="countLastSecond" visibility="public" complexity="3" crap="3" count="3"/>
+      <line num="39" type="stmt" count="3"/>
+      <line num="41" type="stmt" count="3"/>
+      <line num="43" type="stmt" count="3"/>
+      <line num="44" type="stmt" count="3"/>
+      <line num="45" type="stmt" count="3"/>
+      <line num="46" type="stmt" count="3"/>
+      <line num="47" type="stmt" count="3"/>
+      <line num="50" type="stmt" count="3"/>
+      <line num="54" type="stmt" count="3"/>
+      <line num="57" type="method" name="isBetween" visibility="protected" complexity="2" crap="2" count="3"/>
+      <line num="59" type="stmt" count="3"/>
+      <metrics loc="61" ncloc="59" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
+    </file>
+    <file name="./packages/ray/src/Support/Clock.php">
+      <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="./packages/ray/src/Support/Counters.php">
+      <class name="Spatie\Ray\Support\Counters" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="17" coveredelements="17"/>
+      </class>
+      <line num="12" type="method" name="increment" visibility="public" complexity="2" crap="2" count="6"/>
+      <line num="14" type="stmt" count="6"/>
+      <line num="15" type="stmt" count="5"/>
+      <line num="18" type="stmt" count="6"/>
+      <line num="20" type="stmt" count="6"/>
+      <line num="22" type="stmt" count="6"/>
+      <line num="24" type="stmt" count="6"/>
+      <line num="27" type="method" name="get" visibility="public" complexity="2" crap="2" count="4"/>
+      <line num="29" type="stmt" count="4"/>
+      <line num="30" type="stmt" count="3"/>
+      <line num="33" type="stmt" count="4"/>
+      <line num="36" type="method" name="clear" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="41" type="method" name="setRay" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="43" type="stmt" count="1"/>
+      <line num="44" type="stmt" count="1"/>
+      <metrics loc="45" ncloc="44" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="13" elements="17" coveredelements="17"/>
+    </file>
+    <file name="./packages/ray/src/Support/Limiters.php">
+      <class name="Spatie\Ray\Support\Limiters" namespace="global">
+        <metrics complexity="7" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="18" coveredelements="16"/>
+      </class>
+      <line num="12" type="method" name="initialize" visibility="public" complexity="2" crap="2" count="9"/>
+      <line num="14" type="stmt" count="9"/>
+      <line num="15" type="stmt" count="9"/>
+      <line num="18" type="stmt" count="9"/>
+      <line num="21" type="method" name="increment" visibility="public" complexity="2" crap="2" count="9"/>
+      <line num="23" type="stmt" count="9"/>
+      <line num="25" type="stmt" count="9"/>
+      <line num="26" type="stmt" count="1"/>
+      <line num="29" type="stmt" count="8"/>
+      <line num="31" type="stmt" count="8"/>
+      <line num="33" type="stmt" count="8"/>
+      <line num="35" type="stmt" count="8"/>
+      <line num="38" type="method" name="canSendPayload" visibility="public" complexity="3" crap="3.07" count="7"/>
+      <line num="40" type="stmt" count="7"/>
+      <line num="42" type="stmt" count="7"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="46" type="stmt" count="7"/>
+      <line num="48" type="stmt" count="7"/>
+      <metrics loc="50" ncloc="49" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="18" coveredelements="16"/>
+    </file>
+    <file name="./packages/ray/src/Support/RateLimiter.php">
+      <class name="Spatie\Ray\Support\RateLimiter" namespace="global">
+        <metrics complexity="15" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="31" elements="42" coveredelements="42"/>
+      </class>
+      <line num="19" type="method" name="__construct" visibility="private" complexity="1" crap="1" count="5"/>
+      <line num="21" type="stmt" count="5"/>
+      <line num="22" type="stmt" count="5"/>
+      <line num="23" type="stmt" count="5"/>
+      <line num="24" type="stmt" count="5"/>
+      <line num="26" type="method" name="disabled" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="28" type="stmt" count="5"/>
+      <line num="31" type="method" name="hit" visibility="public" complexity="1" crap="1" count="78"/>
+      <line num="33" type="stmt" count="78"/>
+      <line num="35" type="stmt" count="78"/>
+      <line num="38" type="method" name="max" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="40" type="stmt" count="3"/>
+      <line num="42" type="stmt" count="3"/>
+      <line num="45" type="method" name="perSecond" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="47" type="stmt" count="2"/>
+      <line num="49" type="stmt" count="2"/>
+      <line num="52" type="method" name="isMaxReached" visibility="public" complexity="3" crap="3" count="78"/>
+      <line num="54" type="stmt" count="78"/>
+      <line num="55" type="stmt" count="76"/>
+      <line num="58" type="stmt" count="3"/>
+      <line num="60" type="stmt" count="3"/>
+      <line num="61" type="stmt" count="2"/>
+      <line num="64" type="stmt" count="3"/>
+      <line num="67" type="method" name="isMaxPerSecondReached" visibility="public" complexity="3" crap="3" count="78"/>
+      <line num="69" type="stmt" count="78"/>
+      <line num="70" type="stmt" count="77"/>
+      <line num="73" type="stmt" count="2"/>
+      <line num="75" type="stmt" count="2"/>
+      <line num="76" type="stmt" count="1"/>
+      <line num="79" type="stmt" count="2"/>
+      <line num="82" type="method" name="clear" visibility="public" complexity="1" crap="1" count="88"/>
+      <line num="84" type="stmt" count="88"/>
+      <line num="85" type="stmt" count="88"/>
+      <line num="87" type="stmt" count="88"/>
+      <line num="89" type="stmt" count="88"/>
+      <line num="92" type="method" name="isNotified" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="94" type="stmt" count="1"/>
+      <line num="97" type="method" name="notify" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="99" type="stmt" count="1"/>
+      <line num="100" type="stmt" count="1"/>
+      <line num="102" type="method" name="cache" visibility="public" complexity="1" crap="1" count="88"/>
+      <line num="104" type="stmt" count="88"/>
+      <metrics loc="106" ncloc="102" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="31" elements="42" coveredelements="42"/>
+    </file>
+    <file name="./packages/ray/src/Support/SystemClock.php">
+      <class name="Spatie\Ray\Support\SystemClock" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="9" type="method" name="now" visibility="public" complexity="1" crap="1" count="78"/>
+      <line num="11" type="stmt" count="78"/>
+      <metrics loc="13" ncloc="13" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <file name="./packages/ray/src/helpers.php">
+      <line num="13" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="10"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="31" type="stmt" count="10"/>
+      <line num="32" type="stmt" count="0"/>
+      <line num="35" type="stmt" count="10"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="10"/>
+      <line num="41" type="stmt" count="10"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="45" type="stmt" count="10"/>
+      <line num="46" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="10"/>
+      <line num="51" type="stmt" count="10"/>
+      <line num="55" type="stmt" count="0"/>
+      <line num="58" type="stmt" count="0"/>
+      <line num="59" type="stmt" count="0"/>
+      <metrics loc="60" ncloc="55" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="18" coveredstatements="8" elements="18" coveredelements="8"/>
+    </file>
+    <metrics files="53" loc="2751" ncloc="2615" classes="50" methods="223" coveredmethods="195" conditionals="0" coveredconditionals="0" statements="728" coveredstatements="657" elements="951" coveredelements="852"/>
+  </project>
+</coverage>
