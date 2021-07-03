@@ -2,6 +2,8 @@
 
 namespace Permafrost\CoverageCheck\Commands;
 
+use Permafrost\CoverageCheck\Configuration\Configuration;
+use Permafrost\CoverageCheck\Configuration\ConfigurationFactory;
 use Permafrost\CoverageCheck\CoverageChecker;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -15,51 +17,47 @@ class CheckCoverageCommand extends Command
     /** @var OutputInterface */
     protected $output;
 
+    /** @var InputInterface */
+    protected $input;
+
+    /** @var Configuration */
+    protected $config;
+
     protected function configure(): void
     {
         $this->addArgument('filename')
             ->addOption('require', 'r', InputOption::VALUE_REQUIRED, 'Require a minimum code coverage percentage', null)
+            ->addOption('coverage-only', 'C', InputOption::VALUE_NONE, 'Display only the code coverage percentage')
             ->setDescription('Checks a clover-format coverage file for a minimum coverage percentage and optionally enforces it.');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->output = $output;
-
-        $inputFile = $input->getArgument('filename');
-        $requireMode = $input->hasOption('require') && $input->getOption('require') !== null;
-        $percentage = (float)($input->getOption('require') ?? 0.0);
-        $percentage = min(100, max(0, $percentage));
+        $this->input = $input;
+        $this->config = ConfigurationFactory::create($input);
 
         try {
-            $this->verifyInputArguments($inputFile, $percentage, $requireMode);
+            $this->config->validate();
         } catch(\InvalidArgumentException $e) {
             $output->writeln("<error>[ERROR]</error> {$e->getMessage()}");
 
             return Command::INVALID;
         }
 
-        [$result, $coverage] = $this->checkCoverage($inputFile, $percentage);
+        if ($this->config->requireMode) {
+            [$result, $coverage] = $this->checkCoverage($this->config->filename, $this->config->required);
+            $this->displayRequireModeResults($result, $coverage, $this->config->required);
 
-        if ($requireMode) {
-            $this->displayRequireModeResults($result, $coverage, $percentage);
             return $result ? Command::SUCCESS : Command::FAILURE;
         }
+
+        $checker = new CoverageChecker($this->config->filename);
+        $coverage = $checker->getCoveragePercent();
 
         $this->displayCoverageResults($coverage);
 
         return Command::SUCCESS;
-    }
-
-    protected function verifyInputArguments(string $filename, $percentage, bool $requireMode): void
-    {
-        if (! file_exists($filename) || ! is_file($filename)) {
-            throw new \InvalidArgumentException('Invalid input file provided.');
-        }
-
-        if (! $percentage && $requireMode) {
-            throw new \InvalidArgumentException('A required percentage value must be given as the second parameter.');
-        }
     }
 
     protected function checkCoverage(string $filename, float $requiredPercentage): array
@@ -78,6 +76,10 @@ class CheckCoverageCommand extends Command
 
     protected function displayCoverageResults(float $coverage): void
     {
-        $this->output->writeln("Code coverage is {$coverage}%.");
+        $message = $this->config->displayCoverageOnly
+            ? $coverage
+            : "Code coverage is {$coverage}%.";
+
+        $this->output->writeln($message);
     }
 }
