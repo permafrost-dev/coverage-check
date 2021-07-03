@@ -8,6 +8,6 @@
 /tests              export-ignore
 /.editorconfig      export-ignore
 /.php_cs            export-ignore
+/.project-info.yml   export-ignore
 /.github            export-ignore
 /psalm.xml          export-ignore
-

@@ -1,0 +1,11 @@
+project:
+  name: coverage-check
+  subtitle:
+  description: Check a project's code coverage, optionally enforcing a minimum value.
+  type: package
+  command: composer require permafrost-dev/coverage-check --dev
+  weight: 7
+  urls:
+    logo: https://static.permafrost.dev/images/coverage-check/coverage-check-logo-alt.png
+    github: https://github.com/permafrost-dev/coverage-check
+    docs: https://github.com/permafrost-dev/coverage-check/README.md
