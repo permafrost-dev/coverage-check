@@ -12,7 +12,7 @@
 
 Display the code coverage for a project using a clover.xml file, optionally enforcing a minimum code coverage percentage.
 
-Designed to be used in your CI/CD process.
+This package is designed to be used in your CI/CD or automated testing process _(i.e., using GitHub Workflows)_.
 
 The concept for this package is based on [this article](https://ocramius.github.io/blog/automated-code-coverage-check-for-github-pull-requests-with-travis/).
 
@@ -28,9 +28,9 @@ composer require permafrost-dev/coverage-check --dev
 
 Specify a valid clover.xml file and (optionally) a minimum coverage percentage to require using the `--require` or `-r` flag.  A percentage can be either a whole number (integer) or a decimal (float).
 
-If you specify the `--require/-r` flag, the check will fail if coverage is below the percentage you provide, and the process exit code will be non-zero.
+If you specify the `--require/-r` flag, the check will fail if coverage percent is below the value you provide, and the process exit code will be non-zero.
 
-If you don't specify the `--require/-r` flag, only the percentage of code coverage will be displayed.
+If you don't specify the `--require/-r` flag, only the percentage of code coverage will be displayed and the exit code will always be zero.
 
 ```bash
 ./vendor/bin/coverage-check clover.xml
