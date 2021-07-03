@@ -1,6 +1,6 @@
 {
     "name": "permafrost-dev/coverage-check",
-    "description": "Check for a minimum code coverage percentage",
+    "description": "Check a project's code coverage, optionally enforcing a minimum value",
     "type": "library",
     "license": "MIT",
     "authors": [
