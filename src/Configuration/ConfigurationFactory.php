@@ -11,7 +11,7 @@ class ConfigurationFactory
         $filename = $input->getArgument('filename');
         $requireMode = $input->hasOption('require') && $input->getOption('require') !== null;
         $percentage = $requireMode ? (float)$input->getOption('require') : null;
-        $displayCoverageOnly = $input->hasOption('coverage-only') && $input->getOption('coverage-only') !== null;
+        $displayCoverageOnly = $input->hasOption('coverage-only') && $input->getOption('coverage-only') === true;
 
         return new Configuration($filename, $requireMode, $percentage, $displayCoverageOnly);
     }
