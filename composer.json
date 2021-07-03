@@ -1,18 +1,32 @@
 {
     "name": "permafrost-dev/coverage-check",
-    "description": "Check a project's code coverage, optionally enforcing a minimum value",
     "type": "library",
+    "description": "Check a project's code coverage, optionally enforcing a minimum value",
+    "keywords": [
+        "permafrost",
+        "coverage",
+        "code-coverage",
+        "code-quality",
+        "automation"
+    ],
+    "homepage": "https://github.com/permafrost-dev/coverage-check",
     "license": "MIT",
     "authors": [
         {
             "name": "Patrick Organ",
-            "email": "patrick@permafrost.dev"
+            "email": "patrick@permafrost.dev",
+            "homepage": "https://permafrost.dev",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.3|^8.0",
         "ext-simplexml": "*",
         "symfony/console": "^5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "spatie/phpunit-snapshot-assertions": "^4.2"
     },
     "autoload": {
         "psr-4": {
@@ -24,9 +38,19 @@
             "Permafrost\\CoverageCheck\\Tests\\": "tests"
         }
     },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "bin": "bin/coverage-check",
-    "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "spatie/phpunit-snapshot-assertions": "^4.2"
-    }
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/permafrost-dev"
+        }
+    ]
 }
