@@ -38,6 +38,13 @@ If you don't specify the `--require/-r` flag, only the percentage of code covera
 ./vendor/bin/coverage-check clover.xml -r 80.5
 ```
 
+## Available Options
+
+| Option | Description |
+| --- | --- |
+| `--require` or `-r` | Enforce a minimum code coverage value |
+| `--coverage-only` or `-C` | Only display the code coverage value |
+
 ## Generating clover-format coverage files
 
 PHPUnit can generate coverage reports in clover format:
