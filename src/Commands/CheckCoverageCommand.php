@@ -31,7 +31,7 @@ class CheckCoverageCommand extends Command
             ->setDescription('Checks a clover-format coverage file for a minimum coverage percentage and optionally enforces it.');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output): int
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $this->output = $output;
         $this->input = $input;
