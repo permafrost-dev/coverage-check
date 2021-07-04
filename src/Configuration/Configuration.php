@@ -16,9 +16,10 @@ class Configuration
     /** @var bool */
     public $displayCoverageOnly = false;
 
-    public $metricField = 'elements';
+    /** @var string */
+    public $metricField;
 
-    public function __construct(string $filename, bool $requireMode, $required, bool $displayCoverageOnly, string $metricField = 'element')
+    public function __construct(string $filename, bool $requireMode, $required, bool $displayCoverageOnly, string $metricField)
     {
         $this->filename = $filename;
         $this->required = $required;
