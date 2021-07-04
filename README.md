@@ -38,14 +38,22 @@ If you don't specify the `--require/-r` flag, only the percentage of code covera
 ./vendor/bin/coverage-check clover.xml
 ./vendor/bin/coverage-check clover.xml --require=50
 ./vendor/bin/coverage-check clover.xml -r 80.5
+./vendor/bin/coverage-check clover.xml -m statement -r 75
 ```
 
 ## Available Options
 
 | Option | Description |
 | --- | --- |
-| `--require` or `-r` | Enforce a minimum code coverage value |
 | `--coverage-only` or `-C` | Only display the code coverage value |
+| `--metric` or `-m` `<name>` | Use the specified metric field for calculating coverage. Valid values are `element` _(default)_, `method`, or `statement` |
+| `--require` or `-r` `<value>` | Enforce a minimum code coverage value, where `<value>` is an integer or decimal value |
+
+## Metric fields
+
+The field that is used to calculate code coverage can be specified using the `--metric=<name>` or `-m <name>` option.
+
+Valid field names are `element` _(the default)_, `statement`, and `method`.
 
 ## Generating clover-format coverage files
 
