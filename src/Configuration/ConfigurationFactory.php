@@ -12,7 +12,12 @@ class ConfigurationFactory
         $requireMode = $input->hasOption('require') && $input->getOption('require') !== null;
         $percentage = $requireMode ? (float)$input->getOption('require') : null;
         $displayCoverageOnly = $input->hasOption('coverage-only') && $input->getOption('coverage-only') === true;
+        $metricField = 'element';
 
-        return new Configuration($filename, $requireMode, $percentage, $displayCoverageOnly);
+        if ($input->hasOption('metric') && $input->getOption('metric') !== null) {
+            $metricField = $input->getOption('metric');
+        }
+
+        return new Configuration($filename, $requireMode, $percentage, $displayCoverageOnly, $metricField);
     }
 }

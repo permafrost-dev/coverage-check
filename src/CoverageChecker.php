@@ -2,6 +2,7 @@
 
 namespace Permafrost\CoverageCheck;
 
+use Permafrost\CoverageCheck\Configuration\Configuration;
 use SimpleXMLElement;
 
 class CoverageChecker
@@ -9,8 +10,12 @@ class CoverageChecker
     /** @var SimpleXMLElement */
     public $xml;
 
-    public function __construct(string $filename)
+    /** @var Configuration */
+    public $config;
+
+    public function __construct(string $filename, Configuration $config)
     {
+        $this->config = $config;
         $this->xml = new SimpleXMLElement(file_get_contents($filename));
     }
 
@@ -29,8 +34,10 @@ class CoverageChecker
     {
         $metrics = $this->xml->xpath('//metrics');
 
-        $totalElements = $this->getMetricFieldSum($metrics, 'elements');
-        $checkedElements = $this->getMetricFieldSum($metrics, 'coveredelements');
+        [$totalName, $coveredName] = $this->getMetricFieldNames();
+
+        $totalElements = $this->getMetricFieldSum($metrics, $totalName);
+        $checkedElements = $this->getMetricFieldSum($metrics, $coveredName);
 
         return round(($checkedElements / $totalElements) * 100, 4);
     }
@@ -38,5 +45,10 @@ class CoverageChecker
     public function check(float $minPercentage): bool
     {
         return $this->getCoveragePercent() >= $minPercentage;
+    }
+
+    protected function getMetricFieldNames(): array
+    {
+        return ["{$this->config->metricField}s", "covered{$this->config->metricField}s"];
     }
 }

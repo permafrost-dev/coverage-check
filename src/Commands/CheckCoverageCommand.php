@@ -27,6 +27,7 @@ class CheckCoverageCommand extends Command
     {
         $this->addArgument('filename')
             ->addOption('require', 'r', InputOption::VALUE_REQUIRED, 'Require a minimum code coverage percentage', null)
+            ->addOption('metric', 'm', InputOption::VALUE_REQUIRED, 'Use a specific metric field (element, statement, or method)')
             ->addOption('coverage-only', 'C', InputOption::VALUE_NONE, 'Display only the code coverage percentage')
             ->setDescription('Checks a clover-format coverage file for a minimum coverage percentage and optionally enforces it.');
     }
@@ -52,7 +53,7 @@ class CheckCoverageCommand extends Command
             return $result ? Command::SUCCESS : Command::FAILURE;
         }
 
-        $checker = new CoverageChecker($this->config->filename);
+        $checker = new CoverageChecker($this->config->filename, $this->config);
         $coverage = $checker->getCoveragePercent();
 
         $this->displayCoverageResults($coverage);
@@ -62,7 +63,7 @@ class CheckCoverageCommand extends Command
 
     protected function checkCoverage(string $filename, float $requiredPercentage): array
     {
-        $checker = new CoverageChecker($filename);
+        $checker = new CoverageChecker($filename, $this->config);
 
         return [$checker->check($requiredPercentage), $checker->getCoveragePercent()];
     }
