@@ -121,5 +121,4 @@ class CheckCoverageCommandTest extends TestCase
 
         $this->assertEquals(Command::INVALID, $result);
     }
-
 }

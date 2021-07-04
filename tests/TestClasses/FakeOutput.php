@@ -69,5 +69,4 @@ class FakeOutput implements OutputInterface
     {
         $this->writtenData[] = $messages;
     }
-
 }

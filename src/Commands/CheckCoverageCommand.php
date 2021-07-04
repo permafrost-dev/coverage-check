@@ -39,7 +39,7 @@ class CheckCoverageCommand extends Command
 
         try {
             $this->config->validate();
-        } catch(\InvalidArgumentException $e) {
+        } catch (\InvalidArgumentException $e) {
             $output->writeln("<error>[ERROR]</error> {$e->getMessage()}");
 
             return Command::INVALID;

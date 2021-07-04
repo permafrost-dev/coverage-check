@@ -23,5 +23,4 @@ class CoverageCheckerTest extends TestCase
         $this->assertTrue($checker->check(75));
         $this->assertFalse($checker->check(99));
     }
-
 }
