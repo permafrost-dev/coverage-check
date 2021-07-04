@@ -16,6 +16,7 @@ class ConfigurationFactoryTest extends TestCase
         $inputDefinition = new InputDefinition([
             new InputArgument('filename', InputArgument::REQUIRED),
             new InputOption('require', 'r', InputOption::VALUE_REQUIRED),
+            new InputOption('metric', 'm', InputOption::VALUE_REQUIRED),
             new InputOption('coverage-only', 'C', InputOption::VALUE_NONE),
         ]);
 
@@ -66,5 +67,18 @@ class ConfigurationFactoryTest extends TestCase
         }
 
         $this->assertFalse($hasException);
+    }
+
+    /** @test */
+    public function it_throws_an_exception_when_validating_the_metric_field_with_an_invalid_value()
+    {
+        $filename = realpath(__DIR__.'/../data/coverage-clover.xml');
+
+        $input = $this->createInput(['filename' => $filename, '--metric' => 'bad']);
+        $config = ConfigurationFactory::create($input);
+
+        $this->expectException(\InvalidArgumentException::class);
+
+        $config->validate();
     }
 }
