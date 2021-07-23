@@ -19,13 +19,17 @@ class Configuration
     /** @var string */
     public $metricField;
 
-    public function __construct(string $filename, bool $requireMode, $required, bool $displayCoverageOnly, string $metricField)
+    /** @var int */
+    public $precision;
+
+    public function __construct(string $filename, bool $requireMode, $required, bool $displayCoverageOnly, string $metricField, int $precision)
     {
         $this->filename = $filename;
         $this->required = $required;
         $this->requireMode = $requireMode;
         $this->displayCoverageOnly = $displayCoverageOnly;
         $this->metricField = rtrim(strtolower($metricField), 's');
+        $this->precision = $precision;
     }
 
     public function validate(): void

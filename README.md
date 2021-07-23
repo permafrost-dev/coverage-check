@@ -39,6 +39,7 @@ If you don't specify the `--require/-r` flag, only the percentage of code covera
 ./vendor/bin/coverage-check clover.xml --require=50
 ./vendor/bin/coverage-check clover.xml -r 80.5
 ./vendor/bin/coverage-check clover.xml -m statement -r 75
+./vendor/bin/coverage-check clover.xml --precision=1
 ```
 
 ## Available Options
@@ -47,6 +48,7 @@ If you don't specify the `--require/-r` flag, only the percentage of code covera
 | --- | --- |
 | `--coverage-only` or `-C` | Only display the code coverage value |
 | `--metric` or `-m` `<name>` | Use the specified metric field for calculating coverage. Valid values are `element` _(default)_, `method`, or `statement` |
+| `--precision` or `-p` `<value>` | Use the specified precision when calculating the code coverage percentage, where `<value>` is an integer _(default: 4)_ |
 | `--require` or `-r` `<value>` | Enforce a minimum code coverage value, where `<value>` is an integer or decimal value |
 
 ## Metric fields
@@ -104,7 +106,7 @@ jobs:
         run: ./vendor/bin/phpunit --coverage-clover clover.xml
 
       - name: Enforce 75% code coverage
-        run: ./vendor/bin/coverage-check clover.xml --require=75
+        run: ./vendor/bin/coverage-check clover.xml --require=75 --precision=2
 ```
 
 ## Testing
