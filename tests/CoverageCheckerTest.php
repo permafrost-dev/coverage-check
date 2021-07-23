@@ -26,7 +26,7 @@ class CoverageCheckerTest extends TestCase
             2 => 89.88,
         ];
 
-        foreach($map as $precision => $value) {
+        foreach ($map as $precision => $value) {
             $config = new Configuration(__DIR__ . '/data/coverage-clover.xml', false, false, false, 'element', $precision);
             $checker = new CoverageChecker(__DIR__ . '/data/coverage-clover.xml', $config);
 
