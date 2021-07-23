@@ -39,7 +39,7 @@ class CoverageChecker
         $totalElements = $this->getMetricFieldSum($metrics, $totalName);
         $checkedElements = $this->getMetricFieldSum($metrics, $coveredName);
 
-        return round(($checkedElements / $totalElements) * 100, 4);
+        return round(($checkedElements / $totalElements) * 100, $this->config->precision);
     }
 
     public function check(float $minPercentage): bool

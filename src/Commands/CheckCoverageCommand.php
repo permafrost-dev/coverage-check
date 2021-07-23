@@ -29,6 +29,7 @@ class CheckCoverageCommand extends Command
             ->addOption('require', 'r', InputOption::VALUE_REQUIRED, 'Require a minimum code coverage percentage', null)
             ->addOption('metric', 'm', InputOption::VALUE_REQUIRED, 'Use a specific metric field (element, statement, or method)')
             ->addOption('coverage-only', 'C', InputOption::VALUE_NONE, 'Display only the code coverage percentage')
+            ->addOption('precision', 'p', InputOption::VALUE_REQUIRED, 'Precision to use when rounding the code coverage percentage', 4)
             ->setDescription('Checks a clover-format coverage file for a minimum coverage percentage and optionally enforces it.');
     }
 
