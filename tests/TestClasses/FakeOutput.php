@@ -2,7 +2,6 @@
 
 namespace Permafrost\CoverageCheck\Tests\TestClasses;
 
-use Symfony\Component\Console\Formatter\OutputFormatterInterface;
 use Symfony\Component\Console\Output\Output;
 
 class FakeOutput extends Output
@@ -24,5 +23,4 @@ class FakeOutput extends Output
     {
         //
     }
-
 }
