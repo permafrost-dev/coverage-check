@@ -5,6 +5,7 @@
     <br><br>
     <!--img src="https://img.shields.io/packagist/v/permafrost-dev/coverage-check.svg?logo=packagist" alt="Packagist Version"-->
     <img src="https://img.shields.io/github/v/release/permafrost-dev/coverage-check.svg?sort=semver&logo=github" alt="Package Version">
+    <img src="https://img.shields.io/packagist/dt/permafrost-dev/coverage-check?logo=packagist&logoColor=%23fff" alt="Downloads">
     <img src="https://img.shields.io/github/license/permafrost-dev/coverage-check.svg?logo=opensourceinitiative" alt="license">
     <img src="https://github.com/permafrost-dev/coverage-check/actions/workflows/run-tests.yml/badge.svg?branch=main" alt="Test Run Status">
     <img src="https://codecov.io/gh/permafrost-dev/coverage-check/branch/main/graph/badge.svg?token=Xau3YK5548" alt="code coverage">
@@ -79,13 +80,13 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [8.0, 7.4, 7.3]
+        php: [8.1, 8.0, 7.4, 7.3]
 
     name: P${{ matrix.php }} - ${{ matrix.os }}
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
