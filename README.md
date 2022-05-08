@@ -3,12 +3,13 @@
 <p align="center">
     <img src="https://static.permafrost.dev/images/coverage-check/coverage-check-logo-alt.png" alt="coverage-check logo" height="200" style="block">
     <br><br>
-    <!--img src="https://img.shields.io/packagist/v/permafrost-dev/coverage-check.svg?logo=packagist" alt="Packagist Version"-->
     <img src="https://img.shields.io/github/v/release/permafrost-dev/coverage-check.svg?sort=semver&logo=github" alt="Package Version">
     <img src="https://img.shields.io/packagist/dt/permafrost-dev/coverage-check?logo=packagist&logoColor=%23fff" alt="Downloads">
     <img src="https://img.shields.io/github/license/permafrost-dev/coverage-check.svg?logo=opensourceinitiative" alt="license">
     <img src="https://github.com/permafrost-dev/coverage-check/actions/workflows/run-tests.yml/badge.svg?branch=main" alt="Test Run Status">
+    <br>
     <img src="https://codecov.io/gh/permafrost-dev/coverage-check/branch/main/graph/badge.svg?token=Xau3YK5548" alt="code coverage">
+    <img src="https://img.shields.io/librariesio/release/github/permafrost-dev/coverage-check.svg?logo=librariesdotio&logoColor=%23fff" alt="Dependencies">
 </p>
 
 ---
