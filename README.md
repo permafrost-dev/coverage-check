@@ -81,7 +81,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
-        php: [8.1, 8.0, 7.4, 7.3]
+        php: [8.1, 8.0]
 
     name: P${{ matrix.php }} - ${{ matrix.os }}
 
