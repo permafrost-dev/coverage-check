@@ -5,11 +5,11 @@ namespace Permafrost\CoverageCheck\Commands;
 use Permafrost\CoverageCheck\Configuration\Configuration;
 use Permafrost\CoverageCheck\Configuration\ConfigurationFactory;
 use Permafrost\CoverageCheck\CoverageChecker;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Attribute\AsCommand;
 
 #[AsCommand('check')]
 class CheckCoverageCommand extends Command
