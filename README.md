@@ -20,6 +20,10 @@ This package is designed to be used in your CI/CD or automated testing process _
 The concept for this package is based on [this article](https://ocramius.github.io/blog/automated-code-coverage-check-for-github-pull-requests-with-travis/).
 
 ---
+``
+> Note on PHP 7.x support: 
+> If you are using PHP 7.x, use the 1.x version of this package.
+> 
 
 ## Installation
 
